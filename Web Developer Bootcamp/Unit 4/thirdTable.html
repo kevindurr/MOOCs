@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Register</h1>
+    
+    
+    <form>
+        <p>
+        First Name:<input type="text" id="firstName" placeholder="John" required>
+        Last Name:<input type="text" id="lastName" placeholder="Smith" required>
+        <br />
+        Male <input type="radio" name="Gender" id="Male"> Female <input type="radio" name="Gender" id="Female"> Other<input type="radio" name="Gender" id="Other">
+        <br />
+        Email: <input type="email" placeholder="your email" required>
+        Password: <input type="password" placeholder="your password" input pattern=".{5,10}" required title="5 to 10 characters required">
+        <br />
+        Birthday: <select name="Month" id="Month" placeholder="Month">
+            <option value="Month">January</option>
+        </select>
+        <br />
+        I agree to the terms and conditions  <input type="checkbox">
+        <br>
+        <input type="submit" value="Submit"/>
+        </p>
+    </form>
+</body>
+</html>

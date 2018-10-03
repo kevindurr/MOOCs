@@ -1,3 +1,0 @@
-Write anything in this file. 
-
-Test your function by calling find_coffee("coffee.txt")

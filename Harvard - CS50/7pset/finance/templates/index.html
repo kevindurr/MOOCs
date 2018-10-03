@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped text-left">
+  <thead>
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">Name</th>
+      <th scope="col">Shares</th>
+      <th scope="col">Price</th>
+      <th scope="col">TOTAL</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ports in portfo %}
+    <tr>
+        <td>{{ ports.symbol }}</td>
+        <td>{{ ports.name }}</td>
+        <td>{{ ports.shares }}</td>
+        <td>{{ ports.price }}</td>
+        <td>{{ ports.curtot }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+        <td>CASH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{ cash }}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+      <td colspan="4"></td>
+      <td><strong>{{sumtot }}</strong></td>
+  </tfoot>
+</table>
+{% endblock %}
+
+    <!--<tr>-->
+    <!--  <th scope="row">1</th>-->
+    <!--  <td>Mark</td>-->
+    <!--  <td>Otto</td>-->
+    <!--  <td>@mdo</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--  <th scope="row">2</th>-->
+    <!--  <td>Jacob</td>-->
+    <!--  <td>Thornton</td>-->
+    <!--  <td>@fat</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--  <th scope="row">3</th>-->
+    <!--  <td>Larry</td>-->
+    <!--  <td>the Bird</td>-->
+    <!--  <td>@twitter</td>-->
+    <!--</tr>-->
